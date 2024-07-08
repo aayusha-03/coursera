@@ -1,17 +1,14 @@
+// Array of names
+let names = ["Yaakov" , "john" , "Jen" , "Jason" , "Paul" , "Frank" , "Larry" , "Paula" , "Laura" , "Jim"];
+// Loop over each name in the array
+for (let i = 0; i < names.length; i++) {
+  // Get the current name
+  let name = names[i];
 
-// List of available categories
-const categories = ["Lunch", "Dinner", "Sushi", "Breakfast", "Dessert", "Drinks"];
-
-// Function to get a random category
-function getRandomCategory() {
-  const randomIndex = Math.floor(Math.random() * categories.length);
-  return categories[randomIndex];
+  // Check if the first letter is 'j' or 'J'
+  if (name[0].toLowerCase() === 'j') {
+    console.log("Goodbye " + name);
+  } else {
+    console.log("Hello " + name);
+  }
 }
-
-// Event listener for Specials tile click
-document.getElementById("specials-tile").addEventListener("click", function() {
-  const randomCategory = getRandomCategory();
-  // Redirect to the random category page
-  window.location.href = `/categories/${randomCategory.toLowerCase()}.html`;
-});
-
