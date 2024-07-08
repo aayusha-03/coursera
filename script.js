@@ -1,6 +1,6 @@
 
 // Array of names
-let names = ["John", "Rohan", "Mickey", "Rohit", "Hora", "Clara", "Jake", "Oggy", "Shinchan", "Doraemon"];
+let names = ["Yaakov" , "john" , "Jen" , "Jason" , "Paul" , "Frank" , "Larry" , "Paula" , "Laura" , "Jim"];
 
 // Loop over each name in the array
 for (let i = 0; i < names.length; i++) {
